@@ -185,7 +185,8 @@ spec:
           image: registry.access.redhat.com/ubi9/ubi-minimal:latest
           script: |
             #!/bin/sh
-            echo "hello world!"
+            # echo "hello world!"
+            exit 1
     - name: prefetch-dependencies
       params:
       - name: input
